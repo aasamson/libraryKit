@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomTextField" customModule="loginFramework" customModuleProvider="target">
+            <connections>
+                <outlet property="customTextField" destination="RZp-1Y-NDl" id="hEA-FP-Fju"/>
+                <outlet property="customView" destination="BhT-F9-FX4" id="Yqc-IY-vUl"/>
+                <outlet property="errorLabel" destination="ukT-Fo-mvq" id="uif-4f-RjZ"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kiC-Nf-T9o" userLabel="Content View">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+                    <subviews>
+                        <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BhT-F9-FX4">
+                            <rect key="frame" x="20" y="5" width="335" height="41.666666666666664"/>
+                            <subviews>
+                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RZp-1Y-NDl" customClass="CustomUITextField" customModule="loginFramework" customModuleProvider="target">
+                                    <rect key="frame" x="10" y="0.0" width="315" height="41.666666666666664"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="textColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="done"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                            <color key="value" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="removeShortcuts" value="YES"/>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="placeHolderAlpha">
+                                            <real key="value" value="0.5"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </textField>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="RZp-1Y-NDl" secondAttribute="bottom" id="SRD-6z-JcD"/>
+                                <constraint firstItem="RZp-1Y-NDl" firstAttribute="top" secondItem="BhT-F9-FX4" secondAttribute="top" id="YUd-vQ-fyo"/>
+                                <constraint firstAttribute="trailing" secondItem="RZp-1Y-NDl" secondAttribute="trailing" constant="10" id="adi-xy-XRF"/>
+                                <constraint firstItem="RZp-1Y-NDl" firstAttribute="leading" secondItem="BhT-F9-FX4" secondAttribute="leading" constant="10" id="n0J-JH-kZI"/>
+                            </constraints>
+                        </view>
+                        <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username is required." lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ukT-Fo-mvq" userLabel="Error Message">
+                            <rect key="frame" x="20" y="46.666666666666664" width="335" height="13.333333333333336"/>
+                            <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="10"/>
+                            <color key="textColor" red="0.87843137250000003" green="0.4431372549" blue="0.4941176471" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="ukT-Fo-mvq" firstAttribute="top" secondItem="BhT-F9-FX4" secondAttribute="bottom" id="88f-WO-Hy8"/>
+                        <constraint firstItem="BhT-F9-FX4" firstAttribute="top" secondItem="kiC-Nf-T9o" secondAttribute="top" constant="5" id="Erm-lb-bH7"/>
+                        <constraint firstAttribute="trailing" secondItem="ukT-Fo-mvq" secondAttribute="trailing" constant="20" id="IoC-AQ-1sa"/>
+                        <constraint firstItem="BhT-F9-FX4" firstAttribute="leading" secondItem="kiC-Nf-T9o" secondAttribute="leading" constant="20" id="LgP-gY-Szq"/>
+                        <constraint firstAttribute="bottom" secondItem="ukT-Fo-mvq" secondAttribute="bottom" id="Pf9-kW-szt"/>
+                        <constraint firstAttribute="trailing" secondItem="BhT-F9-FX4" secondAttribute="trailing" constant="20" id="Z4K-hk-8qL"/>
+                        <constraint firstItem="ukT-Fo-mvq" firstAttribute="leading" secondItem="kiC-Nf-T9o" secondAttribute="leading" constant="20" id="vFs-ad-xwe"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="kiC-Nf-T9o" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="0Te-k2-PrL"/>
+                <constraint firstItem="kiC-Nf-T9o" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="DMV-T8-Mxi"/>
+                <constraint firstItem="kiC-Nf-T9o" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="HVR-PA-Cnb"/>
+                <constraint firstItem="kiC-Nf-T9o" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="bgc-PB-t73"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="138.40579710144928" y="132.88043478260872"/>
+        </view>
+    </objects>
+</document>
