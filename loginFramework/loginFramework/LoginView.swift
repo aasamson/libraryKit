@@ -8,12 +8,12 @@
 
 import UIKit
 
-
 open class LoginView: UIView {
     
     // MARK: - Actions
     public var tapGoogleLoginAction: (() -> Void)?
     public var tapFacebookLoginAction: (() -> Void)?
+    public var tapSignUpAction: (() -> Void)?
     
     open var logoImage : String = "" {
         didSet {
@@ -21,16 +21,14 @@ open class LoginView: UIView {
         }
     }
     
-    open var username : String = "" {
-        didSet {
-            userNameTextField.customTextField.placeholder = username
-        }
+    public func setupUserName(placeholder: String, keyboardType: UIKeyboardType) {
+        userNameTextField.customTextField.placeholder = placeholder
+        userNameTextField.customTextField.keyboardType = keyboardType
     }
     
-    open var password : String = "" {
-        didSet {
-            passwordTextField.customTextField.placeholder = password
-        }
+    public func setupPassword(placeholder: String, keyboardType: UIKeyboardType) {
+        passwordTextField.customTextField.placeholder = placeholder
+        passwordTextField.customTextField.keyboardType = keyboardType
     }
     
     public func setupLoginButton(font: String, size: Int, bgColor: UIColor, titleColor: UIColor, btnName: String) {
@@ -47,10 +45,10 @@ open class LoginView: UIView {
     }
     
     public func setupSignUpLabel(text: String, font: String, size: Int, textColor: UIColor) {
-           signUpLabel.text = text
-           signUpLabel.textColor = textColor
+        signUpLabel.text = text
+        signUpLabel.textColor = textColor
         signUpLabel.font = UIFont(name: font, size: CGFloat(size))
-       }
+    }
 
     lazy var imageView: UIImageView = {
         let imageView = UIImageView()
@@ -111,6 +109,9 @@ open class LoginView: UIView {
         let signUpLabel = UILabel()
         self.container.addSubview(signUpLabel)
         signUpLabel.anchor(top:self.fbButton.bottomAnchor, leading: nil, bottom: nil, trailing: self.container.trailingAnchor, padding: .init(top: 15, left: 0, bottom: 0, right: 100))
+        let signUpLabelTap = UITapGestureRecognizer(target: self, action: #selector(self.didTapSignUp(_:)))
+        signUpLabel.isUserInteractionEnabled = true
+        signUpLabel.addGestureRecognizer(signUpLabelTap)
         return signUpLabel
     }()
     
@@ -139,7 +140,6 @@ open class LoginView: UIView {
         self.signUpLabel.isHidden = false
     }
     
-    
     required public init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
@@ -155,6 +155,10 @@ extension LoginView {
     
     func didTapFacebookLogin(){
         tapFacebookLoginAction?()
+    }
+    
+    func didTapSignUp(_ sender: UITapGestureRecognizer){
+        tapSignUpAction?()
     }
 
 }

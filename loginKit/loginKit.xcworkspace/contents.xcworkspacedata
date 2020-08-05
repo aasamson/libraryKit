@@ -8,6 +8,9 @@
       location = "group:../loginFramework/loginFramework.xcodeproj">
    </FileRef>
    <FileRef
+      location = "group:../signInFramework/signInFramework.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:Pods/Pods.xcodeproj">
    </FileRef>
 </Workspace>

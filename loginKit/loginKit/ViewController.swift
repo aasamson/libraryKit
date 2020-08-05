@@ -20,6 +20,12 @@ import FacebookCore
 
 class ViewController: UIViewController, GIDSignInDelegate {
     
+    struct segueIds {
+        
+        static let showSignIn = "showSignInSegue"
+        
+    }
+    
     lazy var login: LoginView = {
          var view = LoginView()
          self.view.addSubview(view)
@@ -39,8 +45,11 @@ class ViewController: UIViewController, GIDSignInDelegate {
         
         login.isHidden = false
         login.logoImage = "1.png"
-        login.username = "UserID"
-        login.password = "Password"
+        
+        login.setupUserName(placeholder: "User ID", keyboardType: .default)
+        
+        login.setupPassword(placeholder: "Password", keyboardType: .default)
+        
         login.setupLoginButton(font: "Helvetica", size: 12, bgColor: #colorLiteral(red: 0.968627451, green: 0.5764705882, blue: 0.1176470588, alpha: 1), titleColor: #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1), btnName: "LOG IN")
         login.setuptextLabel(text: "Don't have an account?", font: "Helvetica", size: 12, textColor: #colorLiteral(red: 0.6666666865, green: 0.6666666865, blue: 0.6666666865, alpha: 1))
         login.setupSignUpLabel(text: "Sign Up.", font: "Helvetica", size: 12, textColor: #colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1))
@@ -53,6 +62,10 @@ class ViewController: UIViewController, GIDSignInDelegate {
         
         login.tapFacebookLoginAction = {
             self.getFacebookUserInfo()
+        }
+        
+        login.tapSignUpAction = {
+            self.performSegue(withIdentifier: segueIds.showSignIn, sender: self)
         }
     }
     

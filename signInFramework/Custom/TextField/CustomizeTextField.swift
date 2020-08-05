@@ -1,18 +1,26 @@
 //
 //  CustomTextField.swift
-//  loginFramework
+//  signInFramework
 //
-//  Created by Aira Samson on 7/8/20.
+//  Created by Aira Samson on 7/29/20.
 //  Copyright © 2020 Aira Samson. All rights reserved.
 //
 
 import UIKit
 
-class CustomTextField: UIView {
-    
+class CustomizeTextField: UIView {
+
+    @IBOutlet weak var textLabel: UILabel!
     @IBOutlet weak var customView: UIView!
     @IBOutlet weak var customTextField: CustomUITextField!
     @IBOutlet weak var errorLabel: UILabel!
+    @IBOutlet weak var customImageView: UIImageView!
+    
+    var text : String = "" {
+        didSet {
+            textLabel.text = text
+        }
+    }
     
     var error : String = "" {
         didSet {
@@ -23,6 +31,12 @@ class CustomTextField: UIView {
     var textField : String = "" {
         didSet {
             customTextField.placeholder = textField
+        }
+    }
+    
+    var imageName : String = "" {
+        didSet {
+            customImageView.image = UIImage(named: imageName)
         }
     }
     
@@ -41,8 +55,10 @@ class CustomTextField: UIView {
     }
     
     private func setupDefaults() {
+        text = ""
         error = ""
         textField = ""
+        imageName = ""
         customView.layer.cornerRadius = 5
         customView.layer.borderWidth = 1
         customView.layer.borderColor = #colorLiteral(red: 0.6666666865, green: 0.6666666865, blue: 0.6666666865, alpha: 1)
@@ -75,5 +91,4 @@ class CustomTextField: UIView {
         
         return view
     }
-
 }

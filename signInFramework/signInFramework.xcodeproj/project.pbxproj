@@ -7,186 +7,211 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0105196B24B596480092A4CD /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0105196A24B596480092A4CD /* UIView.swift */; };
-		0105196D24B599300092A4CD /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0105196C24B599300092A4CD /* LoginView.swift */; };
-		0105197924B5A1CE0092A4CD /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0105197724B5A1CE0092A4CD /* CustomTextField.swift */; };
-		0105197A24B5A1CE0092A4CD /* CustomTextField.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0105197824B5A1CE0092A4CD /* CustomTextField.xib */; };
-		0105197C24B5A5330092A4CD /* CustomUITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0105197B24B5A5330092A4CD /* CustomUITextField.swift */; };
-		0105197E24B5ADF10092A4CD /* loginFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0150EDA524AB049800F69FB0 /* loginFramework.framework */; };
-		0150EDB424AB049800F69FB0 /* loginFrameworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0150EDB324AB049800F69FB0 /* loginFrameworkTests.swift */; };
-		0150EDB624AB049800F69FB0 /* loginFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 0150EDA824AB049800F69FB0 /* loginFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0173DAA724D1242700C8A7F7 /* signInFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0173DA9D24D1242700C8A7F7 /* signInFramework.framework */; };
+		0173DAAC24D1242700C8A7F7 /* signInFrameworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0173DAAB24D1242700C8A7F7 /* signInFrameworkTests.swift */; };
+		0173DAAE24D1242700C8A7F7 /* signInFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 0173DAA024D1242700C8A7F7 /* signInFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0173DAB924D1294600C8A7F7 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0173DAB824D1294600C8A7F7 /* UIView.swift */; };
+		0173DAC424D1315100C8A7F7 /* CustomUITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0173DAC324D1315100C8A7F7 /* CustomUITextField.swift */; };
+		0173DAC724D1317000C8A7F7 /* CustomizeTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0173DAC524D1317000C8A7F7 /* CustomizeTextField.swift */; };
+		0173DAC824D1317000C8A7F7 /* CustomizeTextField.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0173DAC624D1317000C8A7F7 /* CustomizeTextField.xib */; };
+		0173DACA24D13E1400C8A7F7 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0173DAC924D13E1400C8A7F7 /* SignInView.swift */; };
+		019C02E724D99B950095D21D /* CustomNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019C02E524D99B950095D21D /* CustomNavigation.swift */; };
+		019C02E824D99B950095D21D /* CustomNavigation.xib in Resources */ = {isa = PBXBuildFile; fileRef = 019C02E624D99B950095D21D /* CustomNavigation.xib */; };
+		019C02EC24D9A5340095D21D /* close.png in Resources */ = {isa = PBXBuildFile; fileRef = 019C02EB24D9A5340095D21D /* close.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		0150EDB024AB049800F69FB0 /* PBXContainerItemProxy */ = {
+		0173DAA824D1242700C8A7F7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 0150ED9C24AB049800F69FB0 /* Project object */;
+			containerPortal = 0173DA9424D1242700C8A7F7 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 0150EDA424AB049800F69FB0;
-			remoteInfo = loginFramework;
+			remoteGlobalIDString = 0173DA9C24D1242700C8A7F7;
+			remoteInfo = signInFramework;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0105196A24B596480092A4CD /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
-		0105196C24B599300092A4CD /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
-		0105197724B5A1CE0092A4CD /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
-		0105197824B5A1CE0092A4CD /* CustomTextField.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTextField.xib; sourceTree = "<group>"; };
-		0105197B24B5A5330092A4CD /* CustomUITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomUITextField.swift; sourceTree = "<group>"; };
-		0150EDA524AB049800F69FB0 /* loginFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = loginFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		0150EDA824AB049800F69FB0 /* loginFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = loginFramework.h; sourceTree = "<group>"; };
-		0150EDA924AB049800F69FB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0150EDAE24AB049800F69FB0 /* loginFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = loginFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0150EDB324AB049800F69FB0 /* loginFrameworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginFrameworkTests.swift; sourceTree = "<group>"; };
-		0150EDB524AB049800F69FB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0173DA9D24D1242700C8A7F7 /* signInFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = signInFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0173DAA024D1242700C8A7F7 /* signInFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = signInFramework.h; sourceTree = "<group>"; };
+		0173DAA124D1242700C8A7F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0173DAA624D1242700C8A7F7 /* signInFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = signInFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0173DAAB24D1242700C8A7F7 /* signInFrameworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signInFrameworkTests.swift; sourceTree = "<group>"; };
+		0173DAAD24D1242700C8A7F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0173DAB824D1294600C8A7F7 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		0173DAC324D1315100C8A7F7 /* CustomUITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomUITextField.swift; sourceTree = "<group>"; };
+		0173DAC524D1317000C8A7F7 /* CustomizeTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomizeTextField.swift; sourceTree = "<group>"; };
+		0173DAC624D1317000C8A7F7 /* CustomizeTextField.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomizeTextField.xib; sourceTree = "<group>"; };
+		0173DAC924D13E1400C8A7F7 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		019C02E524D99B950095D21D /* CustomNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigation.swift; sourceTree = "<group>"; };
+		019C02E624D99B950095D21D /* CustomNavigation.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomNavigation.xib; sourceTree = "<group>"; };
+		019C02EB24D9A5340095D21D /* close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = close.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		0150EDA224AB049800F69FB0 /* Frameworks */ = {
+		0173DA9A24D1242700C8A7F7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0150EDAB24AB049800F69FB0 /* Frameworks */ = {
+		0173DAA324D1242700C8A7F7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0105197E24B5ADF10092A4CD /* loginFramework.framework in Frameworks */,
+				0173DAA724D1242700C8A7F7 /* signInFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0105196924B5963E0092A4CD /* Extension */ = {
+		0173DA9324D1242700C8A7F7 = {
 			isa = PBXGroup;
 			children = (
-				0105196A24B596480092A4CD /* UIView.swift */,
-				0105197B24B5A5330092A4CD /* CustomUITextField.swift */,
-			);
-			path = Extension;
-			sourceTree = "<group>";
-		};
-		0105197624B5A15E0092A4CD /* Custom */ = {
-			isa = PBXGroup;
-			children = (
-				0105197724B5A1CE0092A4CD /* CustomTextField.swift */,
-				0105197824B5A1CE0092A4CD /* CustomTextField.xib */,
-			);
-			path = Custom;
-			sourceTree = "<group>";
-		};
-		0150ED9B24AB049800F69FB0 = {
-			isa = PBXGroup;
-			children = (
-				0105196924B5963E0092A4CD /* Extension */,
-				0105197624B5A15E0092A4CD /* Custom */,
-				0150EDA724AB049800F69FB0 /* loginFramework */,
-				0150EDB224AB049800F69FB0 /* loginFrameworkTests */,
-				0150EDA624AB049800F69FB0 /* Products */,
+				019C02EB24D9A5340095D21D /* close.png */,
+				0173DAB724D1292D00C8A7F7 /* Extension */,
+				0173DABC24D1298500C8A7F7 /* Custom */,
+				0173DA9F24D1242700C8A7F7 /* signInFramework */,
+				0173DAAA24D1242700C8A7F7 /* signInFrameworkTests */,
+				0173DA9E24D1242700C8A7F7 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		0150EDA624AB049800F69FB0 /* Products */ = {
+		0173DA9E24D1242700C8A7F7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0150EDA524AB049800F69FB0 /* loginFramework.framework */,
-				0150EDAE24AB049800F69FB0 /* loginFrameworkTests.xctest */,
+				0173DA9D24D1242700C8A7F7 /* signInFramework.framework */,
+				0173DAA624D1242700C8A7F7 /* signInFrameworkTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		0150EDA724AB049800F69FB0 /* loginFramework */ = {
+		0173DA9F24D1242700C8A7F7 /* signInFramework */ = {
 			isa = PBXGroup;
 			children = (
-				0150EDA824AB049800F69FB0 /* loginFramework.h */,
-				0105196C24B599300092A4CD /* LoginView.swift */,
-				0150EDA924AB049800F69FB0 /* Info.plist */,
+				0173DAA024D1242700C8A7F7 /* signInFramework.h */,
+				0173DAC924D13E1400C8A7F7 /* SignInView.swift */,
+				0173DAA124D1242700C8A7F7 /* Info.plist */,
 			);
-			path = loginFramework;
+			path = signInFramework;
 			sourceTree = "<group>";
 		};
-		0150EDB224AB049800F69FB0 /* loginFrameworkTests */ = {
+		0173DAAA24D1242700C8A7F7 /* signInFrameworkTests */ = {
 			isa = PBXGroup;
 			children = (
-				0150EDB324AB049800F69FB0 /* loginFrameworkTests.swift */,
-				0150EDB524AB049800F69FB0 /* Info.plist */,
+				0173DAAB24D1242700C8A7F7 /* signInFrameworkTests.swift */,
+				0173DAAD24D1242700C8A7F7 /* Info.plist */,
 			);
-			path = loginFrameworkTests;
+			path = signInFrameworkTests;
+			sourceTree = "<group>";
+		};
+		0173DAB724D1292D00C8A7F7 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				0173DAB824D1294600C8A7F7 /* UIView.swift */,
+				0173DAC324D1315100C8A7F7 /* CustomUITextField.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		0173DABC24D1298500C8A7F7 /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				019C02E424D99B7E0095D21D /* Navigation */,
+				019C02E324D99B730095D21D /* TextField */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
+		019C02E324D99B730095D21D /* TextField */ = {
+			isa = PBXGroup;
+			children = (
+				0173DAC524D1317000C8A7F7 /* CustomizeTextField.swift */,
+				0173DAC624D1317000C8A7F7 /* CustomizeTextField.xib */,
+			);
+			path = TextField;
+			sourceTree = "<group>";
+		};
+		019C02E424D99B7E0095D21D /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				019C02E524D99B950095D21D /* CustomNavigation.swift */,
+				019C02E624D99B950095D21D /* CustomNavigation.xib */,
+			);
+			path = Navigation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		0150EDA024AB049800F69FB0 /* Headers */ = {
+		0173DA9824D1242700C8A7F7 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0150EDB624AB049800F69FB0 /* loginFramework.h in Headers */,
+				0173DAAE24D1242700C8A7F7 /* signInFramework.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		0150EDA424AB049800F69FB0 /* loginFramework */ = {
+		0173DA9C24D1242700C8A7F7 /* signInFramework */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0150EDB924AB049800F69FB0 /* Build configuration list for PBXNativeTarget "loginFramework" */;
+			buildConfigurationList = 0173DAB124D1242700C8A7F7 /* Build configuration list for PBXNativeTarget "signInFramework" */;
 			buildPhases = (
-				0150EDA024AB049800F69FB0 /* Headers */,
-				0150EDA124AB049800F69FB0 /* Sources */,
-				0150EDA224AB049800F69FB0 /* Frameworks */,
-				0150EDA324AB049800F69FB0 /* Resources */,
+				0173DA9824D1242700C8A7F7 /* Headers */,
+				0173DA9924D1242700C8A7F7 /* Sources */,
+				0173DA9A24D1242700C8A7F7 /* Frameworks */,
+				0173DA9B24D1242700C8A7F7 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = loginFramework;
-			productName = loginFramework;
-			productReference = 0150EDA524AB049800F69FB0 /* loginFramework.framework */;
+			name = signInFramework;
+			productName = signInFramework;
+			productReference = 0173DA9D24D1242700C8A7F7 /* signInFramework.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		0150EDAD24AB049800F69FB0 /* loginFrameworkTests */ = {
+		0173DAA524D1242700C8A7F7 /* signInFrameworkTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0150EDBC24AB049800F69FB0 /* Build configuration list for PBXNativeTarget "loginFrameworkTests" */;
+			buildConfigurationList = 0173DAB424D1242700C8A7F7 /* Build configuration list for PBXNativeTarget "signInFrameworkTests" */;
 			buildPhases = (
-				0150EDAA24AB049800F69FB0 /* Sources */,
-				0150EDAB24AB049800F69FB0 /* Frameworks */,
-				0150EDAC24AB049800F69FB0 /* Resources */,
+				0173DAA224D1242700C8A7F7 /* Sources */,
+				0173DAA324D1242700C8A7F7 /* Frameworks */,
+				0173DAA424D1242700C8A7F7 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				0150EDB124AB049800F69FB0 /* PBXTargetDependency */,
+				0173DAA924D1242700C8A7F7 /* PBXTargetDependency */,
 			);
-			name = loginFrameworkTests;
-			productName = loginFrameworkTests;
-			productReference = 0150EDAE24AB049800F69FB0 /* loginFrameworkTests.xctest */;
+			name = signInFrameworkTests;
+			productName = signInFrameworkTests;
+			productReference = 0173DAA624D1242700C8A7F7 /* signInFrameworkTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		0150ED9C24AB049800F69FB0 /* Project object */ = {
+		0173DA9424D1242700C8A7F7 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1150;
 				LastUpgradeCheck = 1150;
 				ORGANIZATIONNAME = "Aira Samson";
 				TargetAttributes = {
-					0150EDA424AB049800F69FB0 = {
+					0173DA9C24D1242700C8A7F7 = {
 						CreatedOnToolsVersion = 11.5;
 						LastSwiftMigration = 1150;
 					};
-					0150EDAD24AB049800F69FB0 = {
+					0173DAA524D1242700C8A7F7 = {
 						CreatedOnToolsVersion = 11.5;
 					};
 				};
 			};
-			buildConfigurationList = 0150ED9F24AB049800F69FB0 /* Build configuration list for PBXProject "loginFramework" */;
+			buildConfigurationList = 0173DA9724D1242700C8A7F7 /* Build configuration list for PBXProject "signInFramework" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -194,27 +219,29 @@
 				en,
 				Base,
 			);
-			mainGroup = 0150ED9B24AB049800F69FB0;
-			productRefGroup = 0150EDA624AB049800F69FB0 /* Products */;
+			mainGroup = 0173DA9324D1242700C8A7F7;
+			productRefGroup = 0173DA9E24D1242700C8A7F7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0150EDA424AB049800F69FB0 /* loginFramework */,
-				0150EDAD24AB049800F69FB0 /* loginFrameworkTests */,
+				0173DA9C24D1242700C8A7F7 /* signInFramework */,
+				0173DAA524D1242700C8A7F7 /* signInFrameworkTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		0150EDA324AB049800F69FB0 /* Resources */ = {
+		0173DA9B24D1242700C8A7F7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0105197A24B5A1CE0092A4CD /* CustomTextField.xib in Resources */,
+				019C02EC24D9A5340095D21D /* close.png in Resources */,
+				019C02E824D99B950095D21D /* CustomNavigation.xib in Resources */,
+				0173DAC824D1317000C8A7F7 /* CustomizeTextField.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0150EDAC24AB049800F69FB0 /* Resources */ = {
+		0173DAA424D1242700C8A7F7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -224,37 +251,38 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		0150EDA124AB049800F69FB0 /* Sources */ = {
+		0173DA9924D1242700C8A7F7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0105196D24B599300092A4CD /* LoginView.swift in Sources */,
-				0105196B24B596480092A4CD /* UIView.swift in Sources */,
-				0105197924B5A1CE0092A4CD /* CustomTextField.swift in Sources */,
-				0105197C24B5A5330092A4CD /* CustomUITextField.swift in Sources */,
+				019C02E724D99B950095D21D /* CustomNavigation.swift in Sources */,
+				0173DAC424D1315100C8A7F7 /* CustomUITextField.swift in Sources */,
+				0173DAB924D1294600C8A7F7 /* UIView.swift in Sources */,
+				0173DACA24D13E1400C8A7F7 /* SignInView.swift in Sources */,
+				0173DAC724D1317000C8A7F7 /* CustomizeTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0150EDAA24AB049800F69FB0 /* Sources */ = {
+		0173DAA224D1242700C8A7F7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0150EDB424AB049800F69FB0 /* loginFrameworkTests.swift in Sources */,
+				0173DAAC24D1242700C8A7F7 /* signInFrameworkTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		0150EDB124AB049800F69FB0 /* PBXTargetDependency */ = {
+		0173DAA924D1242700C8A7F7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 0150EDA424AB049800F69FB0 /* loginFramework */;
-			targetProxy = 0150EDB024AB049800F69FB0 /* PBXContainerItemProxy */;
+			target = 0173DA9C24D1242700C8A7F7 /* signInFramework */;
+			targetProxy = 0173DAA824D1242700C8A7F7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0150EDB724AB049800F69FB0 /* Debug */ = {
+		0173DAAF24D1242700C8A7F7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -317,7 +345,7 @@
 			};
 			name = Debug;
 		};
-		0150EDB824AB049800F69FB0 /* Release */ = {
+		0173DAB024D1242700C8A7F7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -374,7 +402,7 @@
 			};
 			name = Release;
 		};
-		0150EDBA24AB049800F69FB0 /* Debug */ = {
+		0173DAB224D1242700C8A7F7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
@@ -384,7 +412,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = loginFramework/Info.plist;
+				INFOPLIST_FILE = signInFramework/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -392,7 +420,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.aasamson.loginFramework;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aasamson.signInFramework;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -401,7 +429,7 @@
 			};
 			name = Debug;
 		};
-		0150EDBB24AB049800F69FB0 /* Release */ = {
+		0173DAB324D1242700C8A7F7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
@@ -411,7 +439,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = loginFramework/Info.plist;
+				INFOPLIST_FILE = signInFramework/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -419,7 +447,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.aasamson.loginFramework;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aasamson.signInFramework;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -427,38 +455,38 @@
 			};
 			name = Release;
 		};
-		0150EDBD24AB049800F69FB0 /* Debug */ = {
+		0173DAB524D1242700C8A7F7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YHG2PSUFT9;
-				INFOPLIST_FILE = loginFrameworkTests/Info.plist;
+				INFOPLIST_FILE = signInFrameworkTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.aasamson.loginFrameworkTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aasamson.signInFrameworkTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		0150EDBE24AB049800F69FB0 /* Release */ = {
+		0173DAB624D1242700C8A7F7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YHG2PSUFT9;
-				INFOPLIST_FILE = loginFrameworkTests/Info.plist;
+				INFOPLIST_FILE = signInFrameworkTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.aasamson.loginFrameworkTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aasamson.signInFrameworkTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -468,34 +496,34 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0150ED9F24AB049800F69FB0 /* Build configuration list for PBXProject "loginFramework" */ = {
+		0173DA9724D1242700C8A7F7 /* Build configuration list for PBXProject "signInFramework" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0150EDB724AB049800F69FB0 /* Debug */,
-				0150EDB824AB049800F69FB0 /* Release */,
+				0173DAAF24D1242700C8A7F7 /* Debug */,
+				0173DAB024D1242700C8A7F7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0150EDB924AB049800F69FB0 /* Build configuration list for PBXNativeTarget "loginFramework" */ = {
+		0173DAB124D1242700C8A7F7 /* Build configuration list for PBXNativeTarget "signInFramework" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0150EDBA24AB049800F69FB0 /* Debug */,
-				0150EDBB24AB049800F69FB0 /* Release */,
+				0173DAB224D1242700C8A7F7 /* Debug */,
+				0173DAB324D1242700C8A7F7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0150EDBC24AB049800F69FB0 /* Build configuration list for PBXNativeTarget "loginFrameworkTests" */ = {
+		0173DAB424D1242700C8A7F7 /* Build configuration list for PBXNativeTarget "signInFrameworkTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0150EDBD24AB049800F69FB0 /* Debug */,
-				0150EDBE24AB049800F69FB0 /* Release */,
+				0173DAB524D1242700C8A7F7 /* Debug */,
+				0173DAB624D1242700C8A7F7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 0150ED9C24AB049800F69FB0 /* Project object */;
+	rootObject = 0173DA9424D1242700C8A7F7 /* Project object */;
 }
