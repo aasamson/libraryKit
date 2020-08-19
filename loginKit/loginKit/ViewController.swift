@@ -46,9 +46,9 @@ class ViewController: UIViewController, GIDSignInDelegate {
         login.isHidden = false
         login.logoImage = "1.png"
         
-        login.setupUserName(placeholder: "User ID", keyboardType: .default)
+        login.setupUserName(placeholder: "Email Address", keyboardType: .default, imageName: "", isShow: true)
         
-        login.setupPassword(placeholder: "Password", keyboardType: .default)
+        login.setupPassword(placeholder: "Password", keyboardType: .default, imageName: "eyeImageView.png", isShow: false)
         
         login.setupLoginButton(font: "Helvetica", size: 12, bgColor: #colorLiteral(red: 0.968627451, green: 0.5764705882, blue: 0.1176470588, alpha: 1), titleColor: #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1), btnName: "LOG IN")
         login.setuptextLabel(text: "Don't have an account?", font: "Helvetica", size: 12, textColor: #colorLiteral(red: 0.6666666865, green: 0.6666666865, blue: 0.6666666865, alpha: 1))
@@ -68,7 +68,7 @@ class ViewController: UIViewController, GIDSignInDelegate {
             self.performSegue(withIdentifier: segueIds.showSignIn, sender: self)
         }
     }
-    
+
     func getFacebookUserInfo(){
         let loginManager = LoginManager()
         loginManager.logIn(permissions: [.publicProfile, .email], viewController: self) { (result) in

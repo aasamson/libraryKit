@@ -21,14 +21,19 @@ open class LoginView: UIView {
         }
     }
     
-    public func setupUserName(placeholder: String, keyboardType: UIKeyboardType) {
+    public func setupUserName(placeholder: String, keyboardType: UIKeyboardType,imageName: String,isShow: Bool) {
         userNameTextField.customTextField.placeholder = placeholder
         userNameTextField.customTextField.keyboardType = keyboardType
+        userNameTextField.imageName = imageName
+        userNameTextField.customImageView.isHidden = isShow
+        
     }
     
-    public func setupPassword(placeholder: String, keyboardType: UIKeyboardType) {
+    public func setupPassword(placeholder: String, keyboardType: UIKeyboardType,imageName: String,isShow: Bool) {
         passwordTextField.customTextField.placeholder = placeholder
         passwordTextField.customTextField.keyboardType = keyboardType
+        passwordTextField.imageName = imageName
+        passwordTextField.customImageView.isHidden = isShow
     }
     
     public func setupLoginButton(font: String, size: Int, bgColor: UIColor, titleColor: UIColor, btnName: String) {
@@ -61,14 +66,25 @@ open class LoginView: UIView {
     lazy var userNameTextField : CustomTextField = {
         let userNameTextField = CustomTextField()
         self.container.addSubview(userNameTextField)
-        userNameTextField.anchor(top:self.imageView.bottomAnchor, leading: self.container.leadingAnchor, bottom: nil, trailing: self.container.trailingAnchor, padding: .init(top: 30, left: 0, bottom: 0, right: 0), size: .init(width: self.container.bounds.width, height: 50))
+        userNameTextField.anchor(top:self.imageView.bottomAnchor, leading: self.container.leadingAnchor, bottom: nil, trailing: self.container.trailingAnchor, padding: .init(top: 30, left: 0, bottom: 0, right: 0), size: .init(width: self.container.bounds.width, height: 65))
+        userNameTextField.customTextField.delegate = self
+        userNameTextField.customTextField.addTarget(self, action: #selector(self.textFieldDidChange), for: .editingChanged)
         return userNameTextField
     }()
     
     lazy var passwordTextField : CustomTextField = {
         let passwordTextField = CustomTextField()
         self.container.addSubview(passwordTextField)
-        passwordTextField.anchor(top:self.userNameTextField.bottomAnchor, leading: self.container.leadingAnchor, bottom: nil, trailing: self.container.trailingAnchor, padding: .init(top: 15, left: 0, bottom: 0, right: 0), size: .init(width: self.container.bounds.width, height: 50))
+        passwordTextField.anchor(top:self.userNameTextField.bottomAnchor, leading: self.container.leadingAnchor, bottom: nil, trailing: self.container.trailingAnchor, padding: .init(top: 0, left: 0, bottom: 0, right: 0), size: .init(width: self.container.bounds.width, height: 65))
+        passwordTextField.customTextField.delegate = self
+        passwordTextField.customTextField.addTarget(self, action: #selector(self.textFieldDidChange), for: .editingChanged)
+        
+        let tapRecognizer = UILongPressGestureRecognizer(target: self, action: #selector(self.didTap(_:)))
+        tapRecognizer.minimumPressDuration = 0
+        passwordTextField.customImageView.addGestureRecognizer(tapRecognizer)
+        passwordTextField.customImageView.isUserInteractionEnabled = true
+        passwordTextField.customTextField.disableAutoFill()
+        
         return passwordTextField
     }()
     
@@ -146,6 +162,29 @@ open class LoginView: UIView {
     
 }
 
+extension LoginView : UITextFieldDelegate {
+    
+    @objc func textFieldDidChange(_ textField: UITextField) {
+        
+        if textField == self.userNameTextField.customTextField {
+            if textField.text?.count == 0 {
+                self.userNameTextField.error = "User Email should not be empty"
+                self.userNameTextField.errorLabel.isHidden = false
+            } else {
+                self.userNameTextField.errorLabel.isHidden = true
+            }
+        } else {
+            if textField.text?.count == 0 {
+                self.passwordTextField.error = "Password should not be empty"
+                self.passwordTextField.errorLabel.isHidden = false
+            } else {
+                self.passwordTextField.errorLabel.isHidden = true
+            }
+        }
+        
+    }
+}
+
 @objc
 extension LoginView {
     
@@ -160,6 +199,30 @@ extension LoginView {
     func didTapSignUp(_ sender: UITapGestureRecognizer){
         tapSignUpAction?()
     }
+    
+    
+    @objc func didTap(_ sender: Any) {
+        let tap = sender as! UIGestureRecognizer
+        switch tap.state {
+        case .began:
+            passwordTextField.customTextField.resignFirstResponder()
+            passwordTextField.customTextField.isSecureTextEntry = false
+        case .ended:
+            passwordTextField.customTextField.resignFirstResponder()
+            passwordTextField.customTextField.isSecureTextEntry = true
+        default:
+            return
+        }
+    }
+}
 
+extension UITextField {
+    func disableAutoFill() {
+        if #available(iOS 12, *) {
+            textContentType = .oneTimeCode
+        } else {
+            textContentType = .init(rawValue: "")
+        }
+    }
 }
 

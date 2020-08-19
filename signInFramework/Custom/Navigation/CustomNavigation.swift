@@ -12,7 +12,8 @@ class CustomNavigation: UIView{
 
     @IBOutlet weak var navView: UIView!
     @IBOutlet weak var navLabel: UILabel!
-    @IBOutlet weak var navButton: UIButton!
+    @IBOutlet weak var navLeftButton: UIButton!
+    @IBOutlet weak var navRightButton: UIButton!
     
     @IBInspectable public var backgroundViewColor: UIColor? {
          get {
@@ -29,31 +30,49 @@ class CustomNavigation: UIView{
          }
      }
     
-     
-     public var headerButton: UIImage? {
+     public var leftButton: UIImage? {
          get {
-             return navButton.currentImage
+             return navLeftButton.currentImage
          }
          set(value) {
              if let image = value {
-                 navButton.setImage(image, for: .normal)
-                 navButton.isHidden = false
+                 navLeftButton.setImage(image, for: .normal)
+                 navLeftButton.isHidden = false
              } else {
-                 navButton.setImage(nil, for: .normal)
-                 navButton.isHidden = true
+                 navLeftButton.setImage(nil, for: .normal)
+                 navLeftButton.isHidden = true
              }
          }
      }
-
-     
+    
+    public var rightButton: UIImage? {
+        get {
+            return navRightButton.currentImage
+        }
+        set(value) {
+            if let image = value {
+                navRightButton.setImage(image, for: .normal)
+                navRightButton.isHidden = false
+            } else {
+                navRightButton.setImage(nil, for: .normal)
+                navRightButton.isHidden = true
+            }
+        }
+    }
+    
+    
      // MARK: - Actions
      
-     public var tapNavButtonAction: (() -> Void)?
+     public var tapNavLeftButtonAction: (() -> Void)?
+     public var tapNavRightButtonAction: (() -> Void)?
      
-     @IBAction func didTapNavButton(_ sender: Any) {
-         tapNavButtonAction?()
+     @IBAction func didTapNavLeftButton(_ sender: Any) {
+         tapNavLeftButtonAction?()
      }
-     
+    
+     @IBAction func didTapRightLeftButton(_ sender: Any) {
+         tapNavRightButtonAction?()
+     }
     
      // MARK: - Initializers
      
@@ -71,7 +90,8 @@ class CustomNavigation: UIView{
      
      private func setupDefaults() {
          
-         headerButton = nil
+         leftButton = nil
+         rightButton = nil
          headerLabel = ""
          
      }

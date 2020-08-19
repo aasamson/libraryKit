@@ -21,10 +21,13 @@
 		0150EDD824AB04F600F69FB0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0150EDD624AB04F600F69FB0 /* LaunchScreen.storyboard */; };
 		0150EDE324AB04F600F69FB0 /* loginKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0150EDE224AB04F600F69FB0 /* loginKitTests.swift */; };
 		0150EDEE24AB04F600F69FB0 /* loginKitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0150EDED24AB04F600F69FB0 /* loginKitUITests.swift */; };
+		0178C0AA24E2DD48002BD753 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0178C0A924E2DD48002BD753 /* Home.storyboard */; };
+		0178C0AC24E2DD6F002BD753 /* ViewControllerHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0178C0AB24E2DD6E002BD753 /* ViewControllerHome.swift */; };
 		019C02D424D97B650095D21D /* down.png in Resources */ = {isa = PBXBuildFile; fileRef = 019C02D324D97B650095D21D /* down.png */; };
 		019C02D724D986EC0095D21D /* SignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 019C02D624D986EC0095D21D /* SignUp.storyboard */; };
 		019C02D924D9870C0095D21D /* ViewControllerSignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019C02D824D9870C0095D21D /* ViewControllerSignUp.swift */; };
 		019C02EA24D9A0FE0095D21D /* navClose.png in Resources */ = {isa = PBXBuildFile; fileRef = 019C02E924D9A0FE0095D21D /* navClose.png */; };
+		019C02F824E1A3C10095D21D /* eyeImageView.png in Resources */ = {isa = PBXBuildFile; fileRef = 019C02F724E1A3C10095D21D /* eyeImageView.png */; };
 		2EF8728A984F1DC7A3BC69AF /* Pods_loginKitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB43E06842010A6E481B9321 /* Pods_loginKitTests.framework */; };
 		4E918B021B17154194A226BD /* Pods_loginKit_loginKitUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41F85311822CA5DCB3D5319B /* Pods_loginKit_loginKitUITests.framework */; };
 		DF8356C813AEE087D050F95E /* Pods_loginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13EF46CAC54B2637D1D22FB3 /* Pods_loginKit.framework */; };
@@ -81,10 +84,13 @@
 		0150EDE924AB04F600F69FB0 /* loginKitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = loginKitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0150EDED24AB04F600F69FB0 /* loginKitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginKitUITests.swift; sourceTree = "<group>"; };
 		0150EDEF24AB04F600F69FB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0178C0A924E2DD48002BD753 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		0178C0AB24E2DD6E002BD753 /* ViewControllerHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerHome.swift; sourceTree = "<group>"; };
 		019C02D324D97B650095D21D /* down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = down.png; sourceTree = "<group>"; };
 		019C02D624D986EC0095D21D /* SignUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUp.storyboard; sourceTree = "<group>"; };
 		019C02D824D9870C0095D21D /* ViewControllerSignUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerSignUp.swift; sourceTree = "<group>"; };
 		019C02E924D9A0FE0095D21D /* navClose.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = navClose.png; sourceTree = "<group>"; };
+		019C02F724E1A3C10095D21D /* eyeImageView.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = eyeImageView.png; sourceTree = "<group>"; };
 		10DECD7180B93F648A297A8B /* Pods-loginKitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-loginKitTests.debug.xcconfig"; path = "Target Support Files/Pods-loginKitTests/Pods-loginKitTests.debug.xcconfig"; sourceTree = "<group>"; };
 		13EF46CAC54B2637D1D22FB3 /* Pods_loginKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_loginKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		41F85311822CA5DCB3D5319B /* Pods_loginKit_loginKitUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_loginKit_loginKitUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -139,6 +145,7 @@
 		0105197F24B5D0250092A4CD /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				019C02F724E1A3C10095D21D /* eyeImageView.png */,
 				0105198824B5DA550092A4CD /* 1.png */,
 				019C02D324D97B650095D21D /* down.png */,
 				0105199224B747900092A4CD /* facebook.png */,
@@ -183,6 +190,7 @@
 				0150EDD624AB04F600F69FB0 /* LaunchScreen.storyboard */,
 				0150EDD924AB04F600F69FB0 /* Info.plist */,
 				019C02D524D986D00095D21D /* SignUp */,
+				0178C0A824E2DD37002BD753 /* Home */,
 			);
 			path = loginKit;
 			sourceTree = "<group>";
@@ -203,6 +211,15 @@
 				0150EDEF24AB04F600F69FB0 /* Info.plist */,
 			);
 			path = loginKitUITests;
+			sourceTree = "<group>";
+		};
+		0178C0A824E2DD37002BD753 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				0178C0A924E2DD48002BD753 /* Home.storyboard */,
+				0178C0AB24E2DD6E002BD753 /* ViewControllerHome.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 		019C02D524D986D00095D21D /* SignUp */ = {
@@ -342,7 +359,9 @@
 				0150EDD824AB04F600F69FB0 /* LaunchScreen.storyboard in Resources */,
 				0105198924B5DA550092A4CD /* 1.png in Resources */,
 				019C02D724D986EC0095D21D /* SignUp.storyboard in Resources */,
+				0178C0AA24E2DD48002BD753 /* Home.storyboard in Resources */,
 				0105199424B747900092A4CD /* facebook.png in Resources */,
+				019C02F824E1A3C10095D21D /* eyeImageView.png in Resources */,
 				019C02D424D97B650095D21D /* down.png in Resources */,
 				0150EDD524AB04F600F69FB0 /* Assets.xcassets in Resources */,
 				0105199524B747900092A4CD /* google.png in Resources */,
@@ -514,6 +533,7 @@
 				0150EDCC24AB04F500F69FB0 /* AppDelegate.swift in Sources */,
 				019C02D924D9870C0095D21D /* ViewControllerSignUp.swift in Sources */,
 				0150EDCE24AB04F500F69FB0 /* SceneDelegate.swift in Sources */,
+				0178C0AC24E2DD6F002BD753 /* ViewControllerHome.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

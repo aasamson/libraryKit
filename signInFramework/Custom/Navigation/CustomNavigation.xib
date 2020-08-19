@@ -10,8 +10,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomNavigation" customModule="signInFramework" customModuleProvider="target">
             <connections>
-                <outlet property="navButton" destination="RUd-7b-Zen" id="M5U-hm-jOF"/>
                 <outlet property="navLabel" destination="u3G-ha-yus" id="xf4-Jn-0zh"/>
+                <outlet property="navLeftButton" destination="RUd-7b-Zen" id="kwe-Jy-81q"/>
+                <outlet property="navRightButton" destination="fT6-KY-bZy" id="zet-FY-6wT"/>
                 <outlet property="navView" destination="IVQ-1v-4bW" id="9rV-Uj-vyY"/>
             </connections>
         </placeholder>
@@ -24,29 +25,41 @@
                     <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RUd-7b-Zen">
-                            <rect key="frame" x="9" y="13" width="35" height="35"/>
+                            <rect key="frame" x="10" y="12.666666666666664" width="35" height="35"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="35" id="5fQ-H8-r3V"/>
                                 <constraint firstAttribute="height" constant="35" id="Uer-BI-ck0"/>
                             </constraints>
                             <state key="normal" image="close.png"/>
                             <connections>
-                                <action selector="didTapNavButton:" destination="-1" eventType="touchUpInside" id="lrl-Ah-fvr"/>
+                                <action selector="didTapNavLeftButton:" destination="-1" eventType="touchUpInside" id="szw-iU-IM8"/>
                             </connections>
                         </button>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UBX" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u3G-ha-yus">
-                            <rect key="frame" x="55" y="20" width="359" height="20"/>
+                            <rect key="frame" x="55" y="20" width="33" height="20"/>
                             <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
                             <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
                         </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fT6-KY-bZy">
+                            <rect key="frame" x="369" y="12.666666666666664" width="35" height="35"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="35" id="PgC-32-RE7"/>
+                                <constraint firstAttribute="height" constant="35" id="bga-7c-eMp"/>
+                            </constraints>
+                            <state key="normal" image="close.png"/>
+                            <connections>
+                                <action selector="didTapRightLeftButton:" destination="-1" eventType="touchUpInside" id="c6f-Ml-tqG"/>
+                            </connections>
+                        </button>
                     </subviews>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <constraints>
-                        <constraint firstAttribute="trailing" secondItem="u3G-ha-yus" secondAttribute="trailing" id="3Dr-Wf-ehY"/>
+                        <constraint firstAttribute="trailing" secondItem="fT6-KY-bZy" secondAttribute="trailing" constant="10" id="JCm-wl-DFs"/>
                         <constraint firstItem="RUd-7b-Zen" firstAttribute="leading" secondItem="IVQ-1v-4bW" secondAttribute="leading" constant="10" id="Oeg-IZ-w08"/>
                         <constraint firstItem="RUd-7b-Zen" firstAttribute="centerY" secondItem="IVQ-1v-4bW" secondAttribute="centerY" id="V0r-xJ-qPt"/>
                         <constraint firstItem="u3G-ha-yus" firstAttribute="centerY" secondItem="IVQ-1v-4bW" secondAttribute="centerY" id="Zqk-ij-Eki"/>
+                        <constraint firstItem="fT6-KY-bZy" firstAttribute="centerY" secondItem="IVQ-1v-4bW" secondAttribute="centerY" id="mrA-F3-bLD"/>
                         <constraint firstItem="u3G-ha-yus" firstAttribute="leading" secondItem="RUd-7b-Zen" secondAttribute="trailing" constant="10" id="wCH-dN-mtc"/>
                     </constraints>
                 </view>

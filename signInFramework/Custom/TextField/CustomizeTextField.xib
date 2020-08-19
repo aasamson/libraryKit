@@ -15,7 +15,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomizeTextField" customModule="signInFramework" customModuleProvider="target">
             <connections>
-                <outlet property="customImageView" destination="x5J-7P-a4A" id="cGv-aF-EFp"/>
+                <outlet property="customImageView" destination="x5J-7P-a4A" id="kgt-mb-4Cj"/>
                 <outlet property="customTextField" destination="1k4-W4-TLl" id="qqj-Od-AJh"/>
                 <outlet property="customView" destination="NoT-sJ-MoN" id="Wkf-oR-HOm"/>
                 <outlet property="errorLabel" destination="Ta9-XO-DUe" id="5ke-Xz-XVE"/>
@@ -58,41 +58,41 @@
                                         </userDefinedRuntimeAttribute>
                                     </userDefinedRuntimeAttributes>
                                 </textField>
-                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="x5J-7P-a4A">
-                                    <rect key="frame" x="302" y="8" width="25" height="25"/>
-                                    <constraints>
-                                        <constraint firstAttribute="width" constant="25" id="cUe-jy-g4r"/>
-                                        <constraint firstAttribute="height" constant="25" id="u8y-cg-xdc"/>
-                                    </constraints>
-                                </imageView>
                             </subviews>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
-                                <constraint firstItem="x5J-7P-a4A" firstAttribute="centerY" secondItem="NoT-sJ-MoN" secondAttribute="centerY" id="9kN-iU-gD6"/>
                                 <constraint firstAttribute="trailing" secondItem="1k4-W4-TLl" secondAttribute="trailing" constant="10" id="Jep-5Y-JPN"/>
                                 <constraint firstAttribute="height" constant="40" id="YVT-WL-f4M"/>
                                 <constraint firstItem="1k4-W4-TLl" firstAttribute="top" secondItem="NoT-sJ-MoN" secondAttribute="top" id="ndk-d1-yYz"/>
                                 <constraint firstItem="1k4-W4-TLl" firstAttribute="leading" secondItem="NoT-sJ-MoN" secondAttribute="leading" constant="10" id="rZN-hm-2xV"/>
-                                <constraint firstAttribute="trailing" secondItem="x5J-7P-a4A" secondAttribute="trailing" constant="8" id="vxo-u3-CPM"/>
                             </constraints>
                         </view>
                         <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username is required." lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ta9-XO-DUe" userLabel="Error Message">
-                            <rect key="frame" x="20" y="65" width="335" height="12"/>
+                            <rect key="frame" x="20" y="68" width="335" height="12"/>
                             <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="11"/>
                             <color key="textColor" red="0.87843137250000003" green="0.4431372549" blue="0.4941176471" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="eyeImageView.png" translatesAutoresizingMaskIntoConstraints="NO" id="x5J-7P-a4A">
+                            <rect key="frame" x="320" y="30.666666666666671" width="25" height="25"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="25" id="cUe-jy-g4r"/>
+                                <constraint firstAttribute="height" constant="25" id="u8y-cg-xdc"/>
+                            </constraints>
+                        </imageView>
                     </subviews>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstItem="Ta9-XO-DUe" firstAttribute="leading" secondItem="RmD-vo-Po2" secondAttribute="leading" constant="20" id="20k-sm-MVe"/>
+                        <constraint firstItem="x5J-7P-a4A" firstAttribute="centerY" secondItem="NoT-sJ-MoN" secondAttribute="centerY" id="FgA-al-hd1"/>
                         <constraint firstAttribute="trailing" secondItem="NoT-sJ-MoN" secondAttribute="trailing" constant="20" id="HkC-KI-k9f"/>
                         <constraint firstItem="JGz-aY-4gI" firstAttribute="leading" secondItem="RmD-vo-Po2" secondAttribute="leading" constant="20" id="NDH-xM-gdy"/>
-                        <constraint firstAttribute="bottom" secondItem="Ta9-XO-DUe" secondAttribute="bottom" constant="3" id="PPV-Lv-eIk"/>
-                        <constraint firstItem="Ta9-XO-DUe" firstAttribute="top" secondItem="NoT-sJ-MoN" secondAttribute="bottom" constant="2" id="WTm-oo-0pO"/>
+                        <constraint firstAttribute="bottom" secondItem="Ta9-XO-DUe" secondAttribute="bottom" id="PPV-Lv-eIk"/>
+                        <constraint firstItem="Ta9-XO-DUe" firstAttribute="top" secondItem="NoT-sJ-MoN" secondAttribute="bottom" constant="5" id="WTm-oo-0pO"/>
                         <constraint firstAttribute="trailing" secondItem="Ta9-XO-DUe" secondAttribute="trailing" constant="20" id="aeX-Fe-kBb"/>
                         <constraint firstItem="JGz-aY-4gI" firstAttribute="top" secondItem="RmD-vo-Po2" secondAttribute="top" constant="2" id="cVy-YI-pva"/>
                         <constraint firstAttribute="trailing" secondItem="JGz-aY-4gI" secondAttribute="trailing" constant="20" id="gS7-ss-uMv"/>
+                        <constraint firstAttribute="trailing" secondItem="x5J-7P-a4A" secondAttribute="trailing" constant="30" id="hve-rY-xX1"/>
                         <constraint firstItem="NoT-sJ-MoN" firstAttribute="leading" secondItem="RmD-vo-Po2" secondAttribute="leading" constant="20" id="lXv-YZ-28J"/>
                         <constraint firstItem="NoT-sJ-MoN" firstAttribute="top" secondItem="JGz-aY-4gI" secondAttribute="bottom" constant="4" id="mMj-JU-sZs"/>
                     </constraints>
@@ -107,7 +107,10 @@
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <point key="canvasLocation" x="139" y="96"/>
+            <point key="canvasLocation" x="138.40579710144928" y="95.380434782608702"/>
         </view>
     </objects>
+    <resources>
+        <image name="eyeImageView.png" width="37.5" height="37.5"/>
+    </resources>
 </document>

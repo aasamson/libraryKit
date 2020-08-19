@@ -10,6 +10,10 @@ import UIKit
 
 import signInFramework
 
+import FirebaseAuth
+
+import FirebaseDatabase
+
 class ViewControllerSignUp: UIViewController {
     
     lazy var signIn: SignInView = {
@@ -25,11 +29,25 @@ class ViewControllerSignUp: UIViewController {
         
         signIn.isHidden = false
         signIn.setupNavigation(title: "Sign Up", imageName: "navClose.png")
-        signIn.tapNavButtonAction = {
+        signIn.tapNavLeftButtonAction = {
             self.dismiss(animated: true, completion: nil)
         }
         
-       // signIn.setupFirstNameTextField(placeholder: "First Name", headerLabel: "First Name", imageName: "", isShow: false)
+        signIn.tapSignUpButtonAction = {
+            
+            Auth.auth().createUser(withEmail: self.signIn.username, password: self.signIn.password, completion: { (user, error) in
+                if error != nil {
+                    print(error!.localizedDescription)
+                    return
+                }
+                let ref = Database.database().reference()
+                let userReference = ref.child("users")
+                let uid = user!.user.uid
+                let newUserReference = userReference.child(uid)
+                newUserReference.setValue(["emailAddress": self.signIn.username,"password": self.signIn.password,"fullName" : self.signIn.fullName, uid: uid])
+                print("description :\(newUserReference.description())")
+            })
+        }
     }
 
 }

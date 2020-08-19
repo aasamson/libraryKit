@@ -18,6 +18,7 @@
 		019C02E724D99B950095D21D /* CustomNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019C02E524D99B950095D21D /* CustomNavigation.swift */; };
 		019C02E824D99B950095D21D /* CustomNavigation.xib in Resources */ = {isa = PBXBuildFile; fileRef = 019C02E624D99B950095D21D /* CustomNavigation.xib */; };
 		019C02EC24D9A5340095D21D /* close.png in Resources */ = {isa = PBXBuildFile; fileRef = 019C02EB24D9A5340095D21D /* close.png */; };
+		019C02F624E1A0310095D21D /* eyeImageView.png in Resources */ = {isa = PBXBuildFile; fileRef = 019C02F524E1A0310095D21D /* eyeImageView.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		019C02E524D99B950095D21D /* CustomNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigation.swift; sourceTree = "<group>"; };
 		019C02E624D99B950095D21D /* CustomNavigation.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomNavigation.xib; sourceTree = "<group>"; };
 		019C02EB24D9A5340095D21D /* close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = close.png; sourceTree = "<group>"; };
+		019C02F524E1A0310095D21D /* eyeImageView.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = eyeImageView.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 			isa = PBXGroup;
 			children = (
 				019C02EB24D9A5340095D21D /* close.png */,
+				019C02F524E1A0310095D21D /* eyeImageView.png */,
 				0173DAB724D1292D00C8A7F7 /* Extension */,
 				0173DABC24D1298500C8A7F7 /* Custom */,
 				0173DA9F24D1242700C8A7F7 /* signInFramework */,
@@ -235,6 +238,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				019C02F624E1A0310095D21D /* eyeImageView.png in Resources */,
 				019C02EC24D9A5340095D21D /* close.png in Resources */,
 				019C02E824D99B950095D21D /* CustomNavigation.xib in Resources */,
 				0173DAC824D1317000C8A7F7 /* CustomizeTextField.xib in Resources */,

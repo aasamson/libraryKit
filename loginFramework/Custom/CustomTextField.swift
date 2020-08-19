@@ -13,6 +13,7 @@ class CustomTextField: UIView {
     @IBOutlet weak var customView: UIView!
     @IBOutlet weak var customTextField: CustomUITextField!
     @IBOutlet weak var errorLabel: UILabel!
+    @IBOutlet weak var customImageView: UIImageView!
     
     var error : String = "" {
         didSet {
@@ -23,6 +24,12 @@ class CustomTextField: UIView {
     var textField : String = "" {
         didSet {
             customTextField.placeholder = textField
+        }
+    }
+    
+    var imageName : String = "" {
+        didSet {
+            customImageView.image = UIImage(named: imageName)
         }
     }
     
@@ -43,6 +50,7 @@ class CustomTextField: UIView {
     private func setupDefaults() {
         error = ""
         textField = ""
+        imageName = ""
         customView.layer.cornerRadius = 5
         customView.layer.borderWidth = 1
         customView.layer.borderColor = #colorLiteral(red: 0.6666666865, green: 0.6666666865, blue: 0.6666666865, alpha: 1)
